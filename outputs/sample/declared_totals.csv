@@ -1,0 +1,22 @@
+group,year,measure,value,status,kind
+Group A,,balance,17,observed,group_total
+Group A,,closures,6,observed,group_total
+Group A,,openings,23,observed,group_total
+Group B,,balance,-1,observed,group_total
+Group B,,closures,10,observed,group_total
+Group B,,openings,9,observed,group_total
+Group C,,balance,0,observed,group_total
+Group C,,closures,0,observed,group_total
+Group C,,openings,0,observed,group_total
+,2021,balance,5,observed,annual_total
+,2021,closures,4,observed,annual_total
+,2021,openings,9,observed,annual_total
+,2022,balance,4,observed,annual_total
+,2022,closures,6,observed,annual_total
+,2022,openings,10,observed,annual_total
+,2023,balance,7,observed,annual_total
+,2023,closures,6,observed,annual_total
+,2023,openings,13,observed,annual_total
+,,balance,16,observed,grand_total
+,,closures,16,observed,grand_total
+,,openings,32,observed,grand_total

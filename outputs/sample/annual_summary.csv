@@ -1,0 +1,10 @@
+year,measure,value,known_sum,group_count,unavailable_count,status
+2021,balance,5,5,3,0,complete
+2021,closures,4,4,3,0,complete
+2021,openings,9,9,3,0,complete
+2022,balance,4,4,3,0,complete
+2022,closures,6,6,3,0,complete
+2022,openings,10,10,3,0,complete
+2023,balance,7,7,3,0,complete
+2023,closures,6,6,3,0,complete
+2023,openings,13,13,3,0,complete

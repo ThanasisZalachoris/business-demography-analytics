@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "measure_order": ["balance", "closures", "openings"],
+  "years": [2021, 2022, 2023],
+  "groups": [
+    {"id": "Group A", "cells": [{"C": [5, 2, 7]}, {"C": [6, 8], "R": 2}, {"C": [], "R": 7}], "total": {"C": [17, 6, 23]}},
+    {"id": "Group B", "cells": [{"C": [0, 2], "R": 2}, {"C": [-2, 4, 2]}, {"C": [1, 5], "R": 2}], "total": {"C": [-1, 10, 9]}},
+    {"id": "Group C", "cells": [{"C": [0, 0, 0]}, {"C": [], "R": 7}, {"C": [], "R": 7}], "total": {"C": [0, 0, 0]}}
+  ],
+  "annual_totals": [{"C": [5, 4, 9]}, {"C": [4, 6, 10]}, {"C": [7, 6, 13]}],
+  "grand_total": {"C": [16, 16, 32]}
+}

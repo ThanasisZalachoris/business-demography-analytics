@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "fail": 0,
+    "incomplete": 0,
+    "pass": 43
+  },
+  "detail_records": 27,
+  "groups": 3,
+  "input_sha256": "99c1897103fab55a7d3c9ddac21a7618883fc4867daa4266fc273fd7575dd2d3",
+  "schema_version": 1,
+  "validation_status": "pass",
+  "years": [
+    2021,
+    2022,
+    2023
+  ]
+}

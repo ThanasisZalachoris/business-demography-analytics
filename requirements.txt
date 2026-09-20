@@ -1,0 +1,2 @@
+# Python 3.10 or newer. Runtime and tests use only the standard library.
+# No third-party dependencies are required.

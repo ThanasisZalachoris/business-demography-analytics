@@ -3,6 +3,47 @@
 An offline Python pipeline that turns compressed annual business counts into
 auditable tables for analysis and BI reporting.
 
+## Real-World Engineering Context
+
+This repository is a sanitized, reproducible portfolio representation of a more
+complex research workflow for interpreting compressed analytical responses.
+The engineering challenge was establishing what the payload meant before
+turning it into trustworthy tables: inspecting nested structures and measure
+descriptors, comparing competing decoder interpretations, aligning time axes,
+and testing decoded values against independently supplied controls.
+
+The original notebooks include programmatic HTTP request experiments, saved
+response inspection, tabular transformations, spreadsheet exports, and
+reconciliation diagnostics. The inspected HTTP experiments contain recorded
+errors; they do not establish a reliable live collector. The supported
+reverse-engineering claim is response-schema and compression analysis, not a
+verified endpoint-discovery or production ingestion system.
+
+The public implementation makes the validated annual decoding and quality-control
+boundary explicit. It uses invented fixtures and a neutral contract rather than
+distributing original responses or request configuration. Deterministic exports,
+strict schema checks, and automated tests make this narrower implementation
+reviewable without access to the original system.
+
+See [engineering architecture and evidence boundaries](docs/architecture.md)
+for the distinction between research experiments and executable capabilities.
+
+```mermaid
+flowchart TD
+    A[Research: inspect saved response structure] --> B[Compare decoder hypotheses against controls]
+    B -. informs .-> C[Neutral annual contract and synthetic fixture]
+    C --> D[Strict parsing and measure mapping]
+    D --> E[Stateful bitmask decoding]
+    E --> F[Typed long-form records with value status]
+    F --> G[Independent totals and balance checks]
+    G --> H[Deterministic CSV and JSON outputs]
+    G --> I[Pass, fail, or incomplete quality gate]
+```
+
+The research nodes describe the design process; the runnable CLI starts at the
+neutral annual contract. A library adapter is available for caller-verified flat
+annual responses, without any live transport or source-specific configuration.
+
 ## Business problem
 
 Counts of business openings and closures can inform market monitoring and
